@@ -2,6 +2,8 @@ package fr.jcgay.notification;
 
 import com.google.auto.value.AutoValue;
 
+import javax.annotation.Nullable;
+
 /**
  * The application we want to send notification(s) from.
  */
@@ -48,6 +50,7 @@ public abstract class Application {
      *
      * @return application icon.
      */
+    @Nullable
     public abstract Icon icon();
 
     Application() {
